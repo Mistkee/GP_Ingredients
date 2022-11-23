@@ -16,7 +16,7 @@ public class PlayerInteraction : MonoBehaviour
     private void Start()
     {
         _anim = GetComponent<PlayerInteractionAnim>();
-        _inventory = GetComponent<Inventory>();
+        _inventory = Inventory.Instance;
     }
 
     public void SetInteraction(InteractionType interaction)

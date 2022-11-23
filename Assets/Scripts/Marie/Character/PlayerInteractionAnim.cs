@@ -51,7 +51,7 @@ public class PlayerInteractionAnim : MonoBehaviour
             }
             case InteractionType.OpenChest:
             {
-                _animator.SetTrigger("Push Button");
+                _animator.SetTrigger("Open Chest");
                 break;
             }
             case InteractionType.FailedAction:
