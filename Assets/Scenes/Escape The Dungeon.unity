@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2027536884}
-  m_IndirectSpecularColor: {r: 0.44657665, g: 0.49140924, b: 0.54790205, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657636, g: 0.49140877, b: 0.54790145, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15228,7 +15228,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItem: {fileID: 11400000, guid: 15d9dae79edc4584886bbc1d8f94f7d9, type: 2}
+  requiredItems:
+  - {fileID: 11400000, guid: 15d9dae79edc4584886bbc1d8f94f7d9, type: 2}
   waitForObject: 1
   litTorch: {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
 --- !u!4 &243814739 stripped
@@ -42012,7 +42013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItem: {fileID: 11400000, guid: b205358823aa3d544894576ddd858f6c, type: 2}
+  requiredItems: []
   waitForObject: 0
 --- !u!135 &1651678386
 SphereCollider:
@@ -42313,7 +42314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItem: {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
+  requiredItems: []
   waitForObject: 1
   chest: {fileID: 0}
 --- !u!1001 &1780946694
@@ -42551,7 +42552,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItem: {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
+  requiredItems: []
   waitForObject: 1
   chest: {fileID: 0}
 --- !u!1001 &1884304220
@@ -47853,7 +47854,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItem: {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
+  requiredItems: []
   waitForObject: 1
   chest: {fileID: 0}
 --- !u!1 &2027536883

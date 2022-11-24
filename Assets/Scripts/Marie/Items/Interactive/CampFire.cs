@@ -11,7 +11,7 @@ public class CampFire : Interactive
         //
         //Remove UNLIT_TORCH from inventory
         //In addition, add LIT_TORCH to found objects
-        Inventory.Instance.RemoveFromInventory(requiredItem);
+        Inventory.Instance.RemoveFromInventory(requiredItems[0]);
         Inventory.Instance.PickupKeyItem(litTorch);
     }
 }

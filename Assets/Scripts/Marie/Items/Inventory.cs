@@ -91,4 +91,17 @@ public class Inventory : MonoBehaviour
         //true if the id is found in the list, false otherwise
         return key==null|| _foundKeys.Contains(key);
     }
+
+    public bool HasEveryItem(List<KeyItemData> keys)
+    {
+        foreach (KeyItemData key in keys)
+        {
+            if (!IsItemFound(key))
+            {
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
