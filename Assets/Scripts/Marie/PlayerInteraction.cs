@@ -78,7 +78,7 @@ public class PlayerInteraction : MonoBehaviour
             {
                 Interactive interactive = other.GetComponent<Interactive>();
                 //if interaction doesn't need key object or interaction key object is in inventory
-                bool hasRequiredItems = _inventory.HasEveryItem(_possibleInteractive.requiredItems);
+                bool hasRequiredItems = _inventory.HasEveryItem(interactive.requiredItems);
                 
                 if (!interactive.waitForObject || hasRequiredItems)
                 {

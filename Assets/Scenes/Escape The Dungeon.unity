@@ -42314,9 +42314,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItems: []
+  requiredItems:
+  - {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
   waitForObject: 1
-  chest: {fileID: 0}
+  chest: {fileID: 1915712839}
 --- !u!1001 &1780946694
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42552,9 +42553,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItems: []
+  requiredItems:
+  - {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
   waitForObject: 1
-  chest: {fileID: 0}
+  chest: {fileID: 1915712839}
 --- !u!1001 &1884304220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -42713,7 +42715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8929589423702217963, guid: 944bff624466e4242a3377fba75ddaf3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8929589423702217963, guid: 944bff624466e4242a3377fba75ddaf3, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -42897,7 +42899,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915712839}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 3321c2cb51e7b9046bc3490cda289c05, type: 2}
   m_CullingMode: 0
@@ -47854,9 +47856,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 2
   onlyOnce: 1
-  requiredItems: []
+  requiredItems:
+  - {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
   waitForObject: 1
-  chest: {fileID: 0}
+  chest: {fileID: 1915712839}
 --- !u!1 &2027536883
 GameObject:
   m_ObjectHideFlags: 0
