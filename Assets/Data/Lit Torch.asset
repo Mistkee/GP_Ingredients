@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 860554354440e4ccd910433df6815a76, type: 3}
   m_Name: Lit Torch
   m_EditorClassIdentifier: 
-  ID: Lit Torch
-  icon: {fileID: 0}
+  ID: LIT_TORCH
+  icon: {fileID: 21300000, guid: 04a733ee8a91a8448a9770ef24ad6d68, type: 3}
   prefab: {fileID: 5636318190908757622, guid: ebfbe770532e84682b6e264577e97cf3, type: 3}

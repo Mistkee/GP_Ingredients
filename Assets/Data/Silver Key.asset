@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 860554354440e4ccd910433df6815a76, type: 3}
   m_Name: Silver Key
   m_EditorClassIdentifier: 
-  ID: 
-  icon: {fileID: 0}
-  prefab: {fileID: 0}
+  ID: SILVER_KEY
+  icon: {fileID: 21300000, guid: 2f54aa903ea3d44f4803e1c76dbd425d, type: 3}
+  prefab: {fileID: 5161355511147050556, guid: ac3b61e9ed2dbd34b897fa4b1de9078e, type: 3}

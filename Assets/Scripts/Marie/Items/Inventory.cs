@@ -1,14 +1,19 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
     public static Inventory Instance;
     
     private List<KeyItemData> _foundKeys = new List<KeyItemData>();
+    private Dictionary<KeyItemData, GameObject> iconsList = new Dictionary<KeyItemData, GameObject>();
+    
     [SerializeField] private List<KeyItem> usableItems;
     [SerializeField] private Transform hand;
-
+    [SerializeField] private GameObject iconsHolder, iconSpacePrefab;
+    
+    
     private int objectInHand = -1;
 
     private void Start()
@@ -26,7 +31,10 @@ public class Inventory : MonoBehaviour
             {
                 KeyItem key = usableItems[place];
                 usableItems.RemoveAt(place);
+                objectInHand--;
                 Destroy(key.gameObject);
+                DiscardKeyItem(keyItem);
+                
             }
         }
     }
@@ -39,6 +47,24 @@ public class Inventory : MonoBehaviour
             usableItems.Add(keyInstance.GetComponent<KeyItem>());
             //Utilise le dernier trouvé
             HoldItem(usableItems.Count-1);
+            GameObject icon = Instantiate(iconSpacePrefab, iconsHolder.transform);
+            icon.transform.GetChild(0).GetComponent<Image>().sprite = keyItem.icon;
+            iconsList.Add(keyItem, icon);
+        }
+    }
+
+    public void DiscardKeyItem(KeyItemData keyItem)
+    {
+        if (_foundKeys.Contains(keyItem))
+        {
+            _foundKeys.Remove(keyItem);
+            if(objectInHand!=-1) HoldItem(objectInHand);
+        }
+
+        if (iconsList.ContainsKey(keyItem))
+        {
+            Destroy(iconsList[keyItem]);
+            iconsList.Remove(keyItem);
         }
     }
 
