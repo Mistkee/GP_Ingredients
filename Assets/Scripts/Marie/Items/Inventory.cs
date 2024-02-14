@@ -40,12 +40,12 @@ public class Inventory : MonoBehaviour
     }
     public void PickupKeyItem(KeyItemData keyItem)
     {
-        if (!_foundKeys.Contains(keyItem))
+        if (keyItem.allowDuplicates || !_foundKeys.Contains(keyItem))
         {
             GameObject keyInstance = Instantiate(keyItem.prefab, hand);
             _foundKeys.Add(keyItem);
             usableItems.Add(keyInstance.GetComponent<KeyItem>());
-            //Utilise le dernier trouvé
+            //Use the last found item
             HoldItem(usableItems.Count-1);
             GameObject icon = Instantiate(iconSpacePrefab, iconsHolder.transform);
             icon.transform.GetChild(0).GetComponent<Image>().sprite = keyItem.icon;
