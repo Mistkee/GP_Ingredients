@@ -6,5 +6,5 @@ using UnityEngine;
 public class KeyItem : MonoBehaviour
 {
     public KeyItemData data;
-    
+    public bool fromFloor = true;
 }

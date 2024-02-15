@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
     
     private int objectInHand = -1;
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
     }
@@ -53,7 +53,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void DiscardKeyItem(KeyItemData keyItem)
+    private void DiscardKeyItem(KeyItemData keyItem)
     {
         if (_foundKeys.Contains(keyItem))
         {

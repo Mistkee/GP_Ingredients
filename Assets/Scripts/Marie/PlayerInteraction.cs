@@ -25,13 +25,14 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (_possibleInteraction != InteractionType.None && ctx.started)
         {
-            _anim.PlayAnimation(_possibleInteraction);
             if (_possibleInteraction == InteractionType.Pickup)
             {
+                _anim.PlayAnimation(_possiblePickable.fromFloor ? InteractionType.Pickup : InteractionType.PushButton);
                 Invoke("Pickup", 2f);
             }
             else
             {
+                _anim.PlayAnimation(_possibleInteraction);
                 Invoke("Interact", 1f);
             }
         }
@@ -67,8 +68,8 @@ public class PlayerInteraction : MonoBehaviour
         {
             if (other.transform.CompareTag("Pickable"))
             {
-                SetInteraction(InteractionType.Pickup);
                 _possiblePickable = other.GetComponentInChildren<KeyItem>();
+                SetInteraction(InteractionType.Pickup);
             }
             else if (other.transform.CompareTag("Interactive"))
             {
