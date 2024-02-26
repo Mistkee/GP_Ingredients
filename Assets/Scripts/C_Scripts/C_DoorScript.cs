@@ -14,6 +14,6 @@ public class C_DoorScript : Interactive
 
     public override void OnInteraction()
     {
-        //animator.SetTrigger("OpenDoor");
+        animator.SetTrigger("OpenDoor");
     }
 }
