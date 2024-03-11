@@ -135,9 +135,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quill (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 8954041185955669000, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
-      propertyPath: m_TagString
-      value: Pickable
+    - target: {fileID: 8954041185955669001, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8954041185955837992, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
       propertyPath: m_LocalPosition.x
