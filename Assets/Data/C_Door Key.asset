@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860554354440e4ccd910433df6815a76, type: 3}
+  m_Name: C_Door Key
+  m_EditorClassIdentifier: 
+  ID: DOOR_KEY
+  icon: {fileID: 21300000, guid: 2f54aa903ea3d44f4803e1c76dbd425d, type: 3}
+  prefab: {fileID: 322969909244090201, guid: 1a4ce7ed7389af14cbc47a4b3ba8a164, type: 3}
+  allowDuplicates: 0
