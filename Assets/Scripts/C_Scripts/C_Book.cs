@@ -5,8 +5,13 @@ using UnityEngine;
 public class C_Book : Interactive
 {
     [SerializeField] private GameObject canvaRecipe;
-    //private bool isInRange;
+    private bool interacted;
+    public static C_Book instance;
 
+    private void Awake()
+    {
+        instance = this;
+    }
     private void Start()
     {
         canvaRecipe.SetActive(false);
@@ -25,20 +30,13 @@ public class C_Book : Interactive
         Debug.Log("dsfsdf");
         canvaRecipe.SetActive(true);
         Time.timeScale = 0;
+        interacted = true;
     }
 
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-
-    //    //uiInteractive.SetActive(true);
-    //    //isInRange = true;
-    //}
-
-    //private void OnTriggerExit(Collider other)
-    //{
-    //    uiInteractive.SetActive(false);
-    //    isInRange = false;
-    //}
+    public bool InteractedWithBook()
+    {
+        return(interacted);
+    }
 
 }
