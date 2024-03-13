@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: C_Cauldron
   m_EditorClassIdentifier: 
   ID: CAULDRON
-  icon: {fileID: 21300000, guid: 8712b1aa9a4d247fb8d0af5a293f71d6, type: 3}
+  icon: {fileID: 21300000, guid: 64f459857a57a694ebdd18d49d83f9ed, type: 3}
   prefab: {fileID: 5905313355104841211, guid: 7415579b459035748aaeaab2d4408039, type: 3}
   allowDuplicates: 0

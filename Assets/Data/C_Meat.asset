@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: C_Meat
   m_EditorClassIdentifier: 
   ID: MEAT
-  icon: {fileID: 21300000, guid: 25b6b275757df4f589d23b542f236cb0, type: 3}
+  icon: {fileID: 21300000, guid: c3c0f149586ecb44b8635982028a21d6, type: 3}
   prefab: {fileID: 7336216937811258066, guid: ed9c9009150bf5449b72838b885e6f64, type: 3}
   allowDuplicates: 0

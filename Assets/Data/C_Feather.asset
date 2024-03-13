@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: C_Feather
   m_EditorClassIdentifier: 
   ID: FEATHER
-  icon: {fileID: 21300000, guid: ee51af6be5ef04b8b8f2ebc3fbba81e1, type: 3}
+  icon: {fileID: 21300000, guid: 582b8eb512fca3e4a86afd9ef427891c, type: 3}
   prefab: {fileID: 8954041185955669000, guid: f74188affffd17e438d11dfb27f39d38, type: 3}
   allowDuplicates: 0
