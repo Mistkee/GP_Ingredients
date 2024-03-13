@@ -5,10 +5,26 @@ using UnityEngine;
 
 public class C_DoorLock : Interactive
 {
+    [SerializeField] KeyItemData key, beaker;
+    Animator animator;
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
+
     public override void OnInteraction()
     {
-        //BREAK KEY
-        Inventory.Instance.RemoveFromInventory(requiredItems[0]);
-        Debug.Log("The key broke");
+        if (Inventory.Instance.IsItemFound(beaker))
+        {
+            animator.SetTrigger("OpenDoor");
+        }
+        else if (Inventory.Instance.IsItemFound(key))
+        {
+            if(key != null)
+            {
+                Inventory.Instance.RemoveFromInventory(key);
+                Debug.Log("The key broke");
+            }
+        }
     }
 }
