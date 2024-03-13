@@ -40,8 +40,11 @@ public class Inventory : MonoBehaviour
     }
     public void PickupKeyItem(KeyItemData keyItem)
     {
+
+        Debug.Log("Coucou " + keyItem.ID);
         if (keyItem.allowDuplicates || !_foundKeys.Contains(keyItem))
         {
+            Debug.Log("Try " + keyItem.ID);
             GameObject keyInstance = Instantiate(keyItem.prefab, hand);
             _foundKeys.Add(keyItem);
             usableItems.Add(keyInstance.GetComponent<KeyItem>());
@@ -50,6 +53,8 @@ public class Inventory : MonoBehaviour
             GameObject icon = Instantiate(iconSpacePrefab, iconsHolder.transform);
             icon.transform.GetChild(0).GetComponent<Image>().sprite = keyItem.icon;
             iconsList.Add(keyItem, icon);
+
+            Debug.Log("I picked " + keyItem.ID);
         }
     }
 
@@ -97,6 +102,7 @@ public class Inventory : MonoBehaviour
         }
 
         objectInHand = number;
+        Debug.Log(objectInHand);
         usableItems[objectInHand].gameObject.SetActive(true);
     }
 

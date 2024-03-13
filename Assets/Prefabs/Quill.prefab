@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8954041185956608008}
   - component: {fileID: 8954041185957608136}
   - component: {fileID: 8954041185955669001}
+  - component: {fileID: -1757732848118895311}
   m_Layer: 0
   m_Name: Quill
   m_TagString: Pickable
@@ -103,6 +104,20 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 2e41661bbaacdea4dbb88e6b20ca88d3, type: 3}
+--- !u!114 &-1757732848118895311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8954041185955669000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0635fdb075f6e40f1974096378094a1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: dec43f3a0619ddc4ca8ce65426985519, type: 2}
+  fromFloor: 0
