@@ -7,14 +7,15 @@ public class C_Lever : Interactive
     [SerializeField] GameObject bookShelf;
     private void Update()
     {
-        //if (C_Book.instance.InteractedWithBook())
-        //{
-        //    GetComponent<Collider>().enabled = true;
-        //}
+        if (C_Book.instance.InteractedWithBook())
+        {
+            GetComponent<Collider>().enabled = true;
+        }
     }
     public override void OnInteraction()
     {
-        //GetComponent<Animator>().SetTrigger("Interacted");
+        Debug.Log("Interacted with");
+        GetComponent<Animator>().SetTrigger("Interacted");
         bookShelf.GetComponent<Animator>().SetTrigger("Open");
     }
 }
