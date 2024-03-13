@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class C_LockedKeyItem : MonoBehaviour
+public class C_LockedKeyItem : KeyItem
 {
 
     public KeyItemData data;
