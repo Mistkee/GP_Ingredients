@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class C_Lever : Interactive
 {
-    [SerializeField] GameObject lever, bookShelf;
+    [SerializeField] GameObject bookShelf;
     private void Update()
     {
         if (C_Book.instance.InteractedWithBook())
@@ -14,7 +14,8 @@ public class C_Lever : Interactive
     }
     public override void OnInteraction()
     {
-        lever.GetComponent<Animator>().SetTrigger("Interacted");
+        Debug.Log("Interacted with");
+        GetComponent<Animator>().SetTrigger("Interacted");
         bookShelf.GetComponent<Animator>().SetTrigger("Open");
     }
 }
