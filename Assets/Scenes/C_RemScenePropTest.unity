@@ -47627,7 +47627,7 @@ MonoBehaviour:
   requiredItems: []
   waitForObject: 0
   key: {fileID: 11400000, guid: 2e57932ef92bebc478d4899acdf85894, type: 2}
-  beaker: {fileID: 11400000, guid: 073ea3e7a42f957419c189f0ab1cc1cd, type: 2}
+  beaker: {fileID: 11400000, guid: 34b9fca8ac4adea458953f4a77c4a4c0, type: 2}
 --- !u!135 &1296978515
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -55973,7 +55973,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1960935707
 MonoBehaviour:
   m_ObjectHideFlags: 0
