@@ -60848,7 +60848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2003245801}
   m_Layer: 0
-  m_Name: KitchenLevelAssets
+  m_Name: KitchenLevelAssets_Rem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
