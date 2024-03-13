@@ -27,7 +27,6 @@ public class C_Book : Interactive
 
     public override void OnInteraction()
     {
-        Debug.Log("dsfsdf");
         canvaRecipe.SetActive(true);
         Time.timeScale = 0;
         interacted = true;
