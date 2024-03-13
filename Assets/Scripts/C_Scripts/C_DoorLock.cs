@@ -8,6 +8,7 @@ public class C_DoorLock : Interactive
     public override void OnInteraction()
     {
         //BREAK KEY
-        Debug.Log("don't have besher");
+        Inventory.Instance.RemoveFromInventory(requiredItems[0]);
+        Debug.Log("The key broke");
     }
 }
