@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: C_Knife
   m_EditorClassIdentifier: 
   ID: KNIFE
-  icon: {fileID: 21300000, guid: c06cfb1e7670b4c5aab444df933905b7, type: 3}
+  icon: {fileID: 21300000, guid: 531d70bc8f2acad4aa279560504eb532, type: 3}
   prefab: {fileID: 9144917434236880020, guid: afd85e448be155e4c81205a2061da683, type: 3}
   allowDuplicates: 0
