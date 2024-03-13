@@ -135,6 +135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Quill
       objectReference: {fileID: 0}
+    - target: {fileID: 8954041185955669000, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
+      propertyPath: m_TagString
+      value: Pickable
+      objectReference: {fileID: 0}
     - target: {fileID: 8954041185955669001, guid: 01b18908cb794a34a8fc133e9f4ec355, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -202,8 +206,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8edaae6abaf993c419a1d9c70f062c8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: dec43f3a0619ddc4ca8ce65426985519, type: 2}
-  fromFloor: 0
   data: {fileID: 11400000, guid: dec43f3a0619ddc4ca8ce65426985519, type: 2}
   fromFloor: 0
 --- !u!135 &29580483

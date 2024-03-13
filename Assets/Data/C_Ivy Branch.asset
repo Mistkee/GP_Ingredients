@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: IVY_BRANCH
   icon: {fileID: 21300000, guid: 350f2e489c1d0458db18e969f67cb28a, type: 3}
-  prefab: {fileID: 4601402560069699907, guid: c5bbeb82695369241958e411b793cd47, type: 3}
+  prefab: {fileID: 4601402560069699907, guid: 558e60526642f2c4388bc4f6fbdb2ff1, type: 3}
   allowDuplicates: 0
