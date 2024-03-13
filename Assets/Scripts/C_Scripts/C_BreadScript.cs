@@ -29,6 +29,8 @@ public class C_BreadScript : Interactive
         halfBread1.SetActive(true); 
         halfBread2.SetActive(true);
 
+        Inventory.Instance.RemoveFromInventory(requiredItems[0]);
+
         Destroy(gameObject);
     }
 }
