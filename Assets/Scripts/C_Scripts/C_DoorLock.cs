@@ -26,5 +26,10 @@ public class C_DoorLock : Interactive
                 Debug.Log("The key broke");
             }
         }
+        else
+        {
+            InteractionHelper.Instance.Show(InteractionType.FailedAction);
+            return;
+        }
     }
 }
