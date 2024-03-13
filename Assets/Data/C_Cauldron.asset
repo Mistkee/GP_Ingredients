@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: CAULDRON
   icon: {fileID: 21300000, guid: 8712b1aa9a4d247fb8d0af5a293f71d6, type: 3}
-  prefab: {fileID: 100000, guid: 0b6871c7b1cb6a244a438bb3ba423e06, type: 3}
+  prefab: {fileID: 5905313355104841211, guid: 9ebd52a346641ab469fe9220a7c27ff8, type: 3}
   allowDuplicates: 0
