@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: BREAD
   icon: {fileID: 21300000, guid: 582e5731e05334a4baedd52f6ede9f56, type: 3}
-  prefab: {fileID: 4982968387883142080, guid: 7830ddcb15808fb49b5b2dd355812f1f, type: 3}
+  prefab: {fileID: 4982968387883142080, guid: 87760cad8f9e64e4abdf0954a3b33379, type: 3}
   allowDuplicates: 0

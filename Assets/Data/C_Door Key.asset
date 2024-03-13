@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: DOOR_KEY
   icon: {fileID: 21300000, guid: 2f54aa903ea3d44f4803e1c76dbd425d, type: 3}
-  prefab: {fileID: 322969909244090201, guid: 1a4ce7ed7389af14cbc47a4b3ba8a164, type: 3}
+  prefab: {fileID: 322969909244090201, guid: 187355109699b1a44b3d1b01cfb403b9, type: 3}
   allowDuplicates: 0

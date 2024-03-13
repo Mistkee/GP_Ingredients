@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: BEAKER
   icon: {fileID: 21300000, guid: f8b6b7e322e774287a38cff00337b96b, type: 3}
-  prefab: {fileID: 5624376342927320338, guid: 3f45d89cb0c87854fbda8401ab35e5ca, type: 3}
+  prefab: {fileID: 5624376342927320338, guid: 1916b29bdf3a3fd4bbd4e6c1cca854b6, type: 3}
   allowDuplicates: 0

@@ -4,9 +4,6 @@ using UnityEngine;
 
 public class C_LockedKeyItem : KeyItem
 {
-
-    public KeyItemData data;
-    public bool fromFloor = true;
     private SphereCollider collider;
 
     private void Start()
