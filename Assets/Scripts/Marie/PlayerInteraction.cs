@@ -48,6 +48,7 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Interact()
     {
+        if (_possibleInteractive == null) return;
         if (_inventory.HasEveryItem(_possibleInteractive.requiredItems))
         {
             _possibleInteractive.OnInteraction();
