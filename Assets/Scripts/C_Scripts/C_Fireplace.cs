@@ -4,10 +4,37 @@ using UnityEngine;
 
 public class C_Fireplace : Interactive
 {
-    [SerializeField] GameObject fireplaceCauldron;
+    PlayerInteractionAnim anim;
+    [SerializeField] GameObject fireplaceCauldron, fire;
+    [SerializeField] KeyItemData torch, cauldron;
+    bool fireOn, cauldronOn;
+
+    private void Start()
+    {
+        anim = GetComponent<PlayerInteractionAnim>();
+    }
     public override void OnInteraction()
     {
-        Inventory.Instance.RemoveFromInventory(requiredItems[0]);
-        fireplaceCauldron.SetActive(true);
+        if(Inventory.Instance.IsItemFound(torch))
+        {
+            fire.SetActive(true);
+            fireOn = true;
+            Inventory.Instance.RemoveFromInventory(torch);
+
+        }
+        
+        if (Inventory.Instance.IsItemFound(cauldron))
+        {
+            fireplaceCauldron.SetActive(true);
+            cauldronOn = true;
+            Inventory.Instance.RemoveFromInventory(cauldron);
+        }
+
+        if(fireOn && cauldronOn)
+        {
+            GetComponent<SphereCollider>().enabled = false;
+            fireplaceCauldron.GetComponent<SphereCollider>().enabled = true;
+        }
+
     }
 }

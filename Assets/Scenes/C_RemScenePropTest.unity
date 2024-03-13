@@ -23412,6 +23412,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3823750313428271633, guid: 5bdc879930154d4469c6a66a2e552eba, type: 3}
   m_PrefabInstance: {fileID: 350304522}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &354971056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2922107562325671188, guid: 55320ad6284175349b1008aaf7238c7a, type: 3}
+  m_PrefabInstance: {fileID: 1761089129}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &364880737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47486,7 +47491,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 1.4
   m_Center: {x: 0.09, y: -0.14774463, z: -0.13}
@@ -52754,6 +52759,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2060808413}
     m_Modifications:
+    - target: {fileID: 2922107562325671188, guid: 55320ad6284175349b1008aaf7238c7a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2922107563029984134, guid: 55320ad6284175349b1008aaf7238c7a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.137732
@@ -52831,12 +52840,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionType: 3
-  onlyOnce: 1
-  requiredItems:
-  - {fileID: 11400000, guid: 2ffd13bfd912b074c892ea4fea5e531e, type: 2}
-  - {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
-  waitForObject: 1
+  onlyOnce: 0
+  requiredItems: []
+  waitForObject: 0
   fireplaceCauldron: {fileID: 251029443}
+  fire: {fileID: 354971056}
+  torch: {fileID: 11400000, guid: c434aac9fa7a6bc47bdb1182293ad768, type: 2}
+  cauldron: {fileID: 11400000, guid: 2ffd13bfd912b074c892ea4fea5e531e, type: 2}
 --- !u!135 &1761089132
 SphereCollider:
   m_ObjectHideFlags: 0
